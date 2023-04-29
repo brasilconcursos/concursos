@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+.header {
+    background: rgba(255, 255, 255, 0);
+    text-align: center;
+    height: 185px;
+    width: 100%;
+    color: white;
+    background-image: url("banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 1px; 
+    background-position-y: -15px;
+}
+
+
+p {
+    margin: 5px;
+    padding: 5px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+li a, .dropbtn {
+    text-align: center;
+    float: left;
+    padding: 10px;
+    color: white;
+    background-color: rgb(66, 66, 218);
+    border: 0.5px solid rgb(255, 255, 255);
+}
+
+li a:hover,.dropdown:hover .dropbtn {
+    font-size: 20px;
+    background-color: red;
+}
+
+li a:hover,.dropdown:hover .dropcursos {
+    font-size: 18px;
+    background-color: red;
+    text-align: left bottom;
+}
+
+.dropdown-content {
+    display: flex;
+    flex-direction: column;
+    display: none;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+.dropdown-content a{
+    color:white;
+    width: 85px;
+    height: 55px;
+
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.corpo-site {
+    display: flex;
+    flex-direction: row;
+}
+
+.artigos {
+    width: 70%;
+}
+
+h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+#propaganda-media {
+    display: none;
+}
+.fotterp {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+@media screen and (max-width: 750px) {
+    .propaganda {
+        display: none;
+    }
+
+    #propaganda-media {
+        display: block;
+    }
+
+    .artigos {
+        width: 100%;
+    }
+}
